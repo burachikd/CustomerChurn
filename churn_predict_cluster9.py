@@ -36,7 +36,7 @@ from keras.layers import LSTM,GRU
 from keras.layers import Lambda
 from keras.layers.wrappers import TimeDistributed
 
-from keras.optimizers import RMSprop,adam
+from keras.optimizers import RMSprop, Adam
 from keras.callbacks import History
 
 import wtte.weibull as weibull
@@ -276,7 +276,7 @@ def create_model_and_load_weights(train_x):
     # Use the discrete log-likelihood for Weibull survival data as our loss function
     loss = wtte.loss(kind='discrete', reduce_loss=False).loss_function
 
-    model.compile(loss=loss, optimizer=adam(lr=.001, clipvalue=0.5, beta_1=0.91, beta_2=0.999))
+    model.compile(loss=loss, optimizer=Adam(lr=.001, clipvalue=0.5, beta_1=0.91, beta_2=0.999))
     model.load_weights(os.path.join(models, '2020-05-06_segment_9_LSTM24.h5'.format(today, cluster)))
     return model
 
