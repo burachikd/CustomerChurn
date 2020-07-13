@@ -67,17 +67,17 @@ cluster = 4
 
 print(models)
 
-file = 'test_data_may2020.csv'
+file = 'test_data_june2020.csv'
 path_predict_test = os.path.join(os.getcwd(), 'Churn', 'data', 'Cluster4', file)
 
-treshhold = 45
+treshhold = 75
 # # Configurable observation look-back period for each user/day
 max_time = 100
 mask_value = -99
 # event probability
 probability = .3
-churn_month_start = '2020-06-01'
-churn_month_end = '2020-06-30'
+churn_month_start = '2020-07-01'
+churn_month_end = '2020-07-31'
 
 """
     Discrete log-likelihood for Weibull hazard function on censored survival data

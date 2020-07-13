@@ -67,7 +67,8 @@ cluster = 9
 
 print(models)
 
-file = 'test_data_may2020.csv'
+# if segmentation done in 1 july file named june2020
+file = 'test_data_june2020.csv'
 path_predict_test = os.path.join(os.getcwd(), 'Churn', 'data', 'Cluster9', file)
 
 treshhold = 45
@@ -76,8 +77,9 @@ max_time = 100
 mask_value = -99
 # event probability
 probability = .65
-churn_month_start = '2020-06-01'
-churn_month_end = '2020-06-30'
+# # if segmentation done in 1 july need use july dates
+churn_month_start = '2020-07-01'
+churn_month_end = '2020-07-31'
 
 """
     Discrete log-likelihood for Weibull hazard function on censored survival data
