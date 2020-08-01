@@ -9,7 +9,7 @@ import os
 from datetime import datetime as dt
 import sys
 
-filename = 'rfm_data_full_june2020.csv'
+filename = 'rfm_data_full_july2020.csv'
 segment_dir = 'Segmentation'
 data_dir = 'data'
 models_dir = 'models'

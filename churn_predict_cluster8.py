@@ -76,8 +76,8 @@ max_time = 100
 mask_value = -99
 # event probability
 probability = .3
-churn_month_start = '2020-07-01'
-churn_month_end = '2020-07-31'
+churn_month_start = '2020-08-01'
+churn_month_end = '2020-08-31'
 
 """
     Discrete log-likelihood for Weibull hazard function on censored survival data
